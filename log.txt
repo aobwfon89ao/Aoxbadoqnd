@@ -1,0 +1,212 @@
+[06-Aug-24 17:04:46 - INFO] - ميوزك الحيتان - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[06-Aug-24 17:04:46 - INFO] - ميوزك الحيتان - تم الاتصـال بقاعـدة البيانـات ...✓
+[06-Aug-24 17:04:46 - INFO] - ميوزك الحيتان - تم تحـديث السـورس ...✓
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - تم الاتصـال بقاعـدة البيانـات ...✓
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - تم تحـديث السـورس ...✓
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - Git Client Found [VPS DEPLOYER]
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - تم تحديث قاعدة بيانات البوت ...✓
+[06-Aug-24 17:05:26 - INFO] - ميوزك الحيتان - جارِ بدء تشغيل البوت . . .
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - تم الاتصـال بقاعـدة البيانـات ...✓
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - تم تحـديث السـورس ...✓
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - Git Client Found [VPS DEPLOYER]
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - تم تحديث قاعدة بيانات البوت ...✓
+[06-Aug-24 17:08:54 - INFO] - ميوزك الحيتان - جارِ بدء تشغيل البوت . . .
+[06-Aug-24 17:08:58 - INFO] - ميوزك الحيتان -  تم تحميل قائمة مطورين البوت ...✓
+[06-Aug-24 17:09:02 - INFO] - ميوزك الحيتان -  تم بدء تشغيل البوت ‌‏“⤸ 𝐋𝐨𝐊𝐚 ♡ 𝐁𝐨𝐓⤿ „  ...✓
+[06-Aug-24 17:09:02 - INFO] - ميوزك العالم - تم تحميل الاضافات ...✓
+[06-Aug-24 17:09:02 - INFO] - ميوزك الحيتان - جارِ تشغيل الحساب المساعد . . .
+[06-Aug-24 17:09:03 - INFO] - ميوزك الحيتان - تم بدء تشغيل الحساب المساعد ℍ𝔼𝕃ℙ𝔼ℝ 𝕄𝔼 ...✓
+[06-Aug-24 17:09:03 - INFO] - ميــوزك الحيتان - جارِ تحميل مكاتب الميوزك . . .
+
+[06-Aug-24 17:09:06 - INFO] - ميوزك الحيتان - TmLotus
+[06-Aug-24 17:10:30 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-1087' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:11:09 - ERROR] - pyrogram.dispatcher - 'NoneType' object has no attribute 'status'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/KERO/SRC/SrcMusicKERO/plugins/play/منع تصفية ورفع مشرف.py", line 21, in welcome
+    if chat_member_updated.new_chat_member.status == ChatMemberStatus.BANNED:
+AttributeError: 'NoneType' object has no attribute 'status'
+[06-Aug-24 17:11:53 - ERROR] - pyrogram.dispatcher - 'Message' object has no attribute 'message_id'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/KERO/SRC/SrcMusicKERO/plugins/play/hmsa.py", line 19, in reply_with_link
+    await message.reply_text("\n╢ إضغط لإرسال همسه!\n", reply_markup=reply_markup, reply_to_message_id=message.message_id)
+AttributeError: 'Message' object has no attribute 'message_id'
+[06-Aug-24 17:13:06 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2004' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:13:07 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2009' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:13:07 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2018' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:13:29 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2097' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:13:29 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2102' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:13:30 - ERROR] - asyncio - Task exception was never retrieved
+future: <Task finished name='Task-2106' coro=<Client.handle_updates() done, defined at /usr/local/lib/python3.8/dist-packages/pyrogram/client.py:535> exception=ValueError('Peer id invalid: -1002234224738')>
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 62, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/storage/sqlite_storage.py", line 142, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -1002234224738'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/client.py", line 569, in handle_updates
+    channel=await self.resolve_peer(utils.get_channel_id(channel_id)),
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/resolve_peer.py", line 89, in resolve_peer
+    peer_type = utils.get_peer_type(peer_id)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/utils.py", line 246, in get_peer_type
+    raise ValueError(f"Peer id invalid: {peer_id}")
+ValueError: Peer id invalid: -1002234224738
+[06-Aug-24 17:14:15 - ERROR] - pyrogram.dispatcher - 'Message' object has no attribute 'message_id'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/KERO/SRC/SrcMusicKERO/plugins/play/hmsa.py", line 19, in reply_with_link
+    await message.reply_text("\n╢ إضغط لإرسال همسه!\n", reply_markup=reply_markup, reply_to_message_id=message.message_id)
+AttributeError: 'Message' object has no attribute 'message_id'
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - جـارِ الاتصـال بقاعـدة البيانـات . . .
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - تم الاتصـال بقاعـدة البيانـات ...✓
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - تم تحـديث السـورس ...✓
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - Git Client Found [VPS DEPLOYER]
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - تم تحديث قاعدة بيانات البوت ...✓
+[06-Aug-24 17:19:16 - INFO] - ميوزك الحيتان - جارِ بدء تشغيل البوت . . .
+[06-Aug-24 17:19:19 - INFO] - ميوزك الحيتان -  تم تحميل قائمة مطورين البوت ...✓
+[06-Aug-24 17:19:23 - INFO] - ميوزك الحيتان -  تم بدء تشغيل البوت ‌‏“⤸ 𝐋𝐨𝐊𝐚 ♡ 𝐁𝐨𝐓⤿ „  ...✓
+[06-Aug-24 17:19:23 - INFO] - ميوزك العالم - تم تحميل الاضافات ...✓
+[06-Aug-24 17:19:23 - INFO] - ميوزك الحيتان - جارِ تشغيل الحساب المساعد . . .
+[06-Aug-24 17:19:24 - INFO] - ميوزك الحيتان - تم بدء تشغيل الحساب المساعد ℍ𝔼𝕃ℙ𝔼ℝ 𝕄𝔼 ...✓
+[06-Aug-24 17:19:24 - INFO] - ميــوزك الحيتان - جارِ تحميل مكاتب الميوزك . . .
+
+[06-Aug-24 17:19:26 - INFO] - ميوزك الحيتان - TmLotus
+[06-Aug-24 17:20:22 - ERROR] - pyrogram.dispatcher - Telegram says: [400 MEDIA_CAPTION_TOO_LONG] - The media caption is too long (caused by "messages.EditMessage")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/root/KERO/SRC/SrcMusicKERO/plugins/play/ComandsRep.py", line 159, in italy
+    await query.edit_message_caption(caption =f"""✅ **اليك قائمة اوامر سورس الحيتان ♬**
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 245, in edit_message_caption
+    return await self.edit_message_text(caption, parse_mode, reply_markup=reply_markup)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/types/bots_and_keyboards/callback_query.py", line 200, in edit_message_text
+    return await self._client.edit_message_text(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/usr/local/lib/python3.8/dist-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MediaCaptionTooLong: Telegram says: [400 MEDIA_CAPTION_TOO_LONG] - The media caption is too long (caused by "messages.EditMessage")
